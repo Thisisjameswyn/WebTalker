@@ -31,4 +31,11 @@ $(document).ready(function() {
       $(this).remove();
     });
   });
+
+  $("button#img").click(function() {
+    $("h2#img").after("<img src='/img/cat.jpg' alt='cute kitty'></img>");
+    $("img").click(function() {
+      $(this).remove();
+    })
+  })
 });
